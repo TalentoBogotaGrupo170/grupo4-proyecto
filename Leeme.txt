@@ -1,0 +1,4 @@
+Descripcion de la aplicacion:
+
+A partir del problema citado en el reto “Oportunidades Laborales” y también desde el punto de vista de un aplicante, quisimos analizar una forma de búsqueda de empleo más práctica e interesante. De allí pensamos en una aplicación interactiva, cuyos beneficios se vean reflejados tanto en el usuario aplicante como en la optimización del proceso de selección para las empresas.
+Nos destacaríamos en lo siguiente: ingreso de datos simplificados, interactividad entre la empresa y el postulante por medio de notificaciones automáticas (con la rapidez de un click) sobre el estado del proceso de selección (pruebas, entrevistas virtuales y/o presenciales), contratación, seguimiento a postulantes no contratados. También se tendrá un video de bienvenida, chat de contacto y el arte visual de la aplicación. 
