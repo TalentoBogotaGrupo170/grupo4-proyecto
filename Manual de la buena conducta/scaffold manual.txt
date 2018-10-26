@@ -1,0 +1,22 @@
+
+cd desktop
+
+cd manual de la buena conducta
+
+rails new manual 
+
+cd manual
+
+rails g scaffold District name:string
+
+rails g scaffold Institute name:string contact:string address:string district:references phone:string email:string
+ 
+rails g scaffold Grade name:string institute:references number_student:integer director:string daytime:string
+
+rails g scaffold Teacher name:string institute:references subject:string grade:references email:string
+
+rails g scaffold Student name:string grade:references institute:references teacher:references 
+
+rails g scaffold Report type_report:integer behaivor:string brief_description:string report_date:date teacher:references student:references
+
+rails g scaffold Guardian name:string phone:integer email:string student:references     
