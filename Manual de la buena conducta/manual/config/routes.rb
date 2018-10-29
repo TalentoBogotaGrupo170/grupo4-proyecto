@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :teachers
   get 'home/index'
   root 'home#index'
   resources :guardians
@@ -8,6 +9,5 @@ Rails.application.routes.draw do
   resources :grades
   resources :institutes
   resources :districts
-  resources :institues
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

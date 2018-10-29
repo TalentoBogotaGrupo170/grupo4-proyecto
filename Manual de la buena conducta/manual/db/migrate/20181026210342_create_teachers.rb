@@ -5,7 +5,7 @@ class CreateTeachers < ActiveRecord::Migration[5.2]
       t.references :institute, foreign_key: true
       t.string :subject
       t.references :grade, foreign_key: true
-      t.string :email
+      
 
       t.timestamps
     end
