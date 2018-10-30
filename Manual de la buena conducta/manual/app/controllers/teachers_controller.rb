@@ -28,6 +28,9 @@ class TeachersController < ApplicationController
 
     respond_to do |format|
       if @teacher.save
+  # Sends email to user when user is created.
+  BehaviorMailer.welcome_behavior(@user).deliver
+
         format.html { redirect_to @teacher, notice: 'Teacher was successfully created.' }
         format.json { render :show, status: :created, location: @teacher }
       else
