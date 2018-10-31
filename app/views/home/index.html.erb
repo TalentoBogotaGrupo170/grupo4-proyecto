@@ -1,18 +1,24 @@
 
+<% if user_signed_in? %>
+<%= link_to('Salir', destroy_user_session_path, method: :delete) %>  
+<% else %>
+<%= link_to('Ingresar', new_user_session_path)  %>
+<% end %>
 <h1>Bienvenidos al manual de la buena conducta</h1>
 
 <p>Desarrolladores: </p>
 <p> Elizabeth Piscal </p>
 <p> Angela Bulla</p>
 <p> Elizabeth Piscal </p>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+
+<%= link_to('Usuarios', users_path) %>
+<%= link_to('Localides', districts_path) %>
+<%= link_to('Instituciones', institutes_path) %>
+<%= link_to('Curso', grades_path) %>
+<%= link_to('Tutor', guardians_path) %>
+<%= link_to('Reportes', reports_path) %>
+<%= link_to('Estudiantes', students_path) %>
+<%= link_to('Docentes', teachers_path) %>
+
+
 
